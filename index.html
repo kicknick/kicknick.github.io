@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -9,10 +10,8 @@
 	<textarea placeholder="Введите Ваше сообщение..." cols="50" rows="5"></textarea>
 	</br>
 	<button >Отправить</button>
-
 <script type="text/javascript">
 	Parse.initialize("oSyaicP3DeKZF0Mp3lYuaRL7ynkHyW8yiW1XEYuL", "bjPQaWsNR1UKS2orioswy28z7WtIBqTgUlAONM6l");
-
 	document.getElementsByTagName('button')[0].addEventListener('click', function() {
 		var text = document.getElementsByTagName('textarea')[0].value
 		var Message = Parse.Object.extend("Message");
@@ -23,7 +22,6 @@
 			console.log(err);
 		});
 	});
-
 </script>
 </body>
 </html>
